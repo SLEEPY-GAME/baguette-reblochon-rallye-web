@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Progress } from "@/components/ui/progress";
+import { cn } from "@/lib/utils";
 
 const StatsSection: React.FC = () => {
   const stats = [
@@ -28,7 +29,12 @@ const StatsSection: React.FC = () => {
                 <span className="text-4xl font-bold">{stat.value}</span>
                 <span className="text-lg opacity-80 mb-1">{stat.unit}</span>
               </div>
-              <Progress value={(stat.value / stat.target) * 100} className="h-2 bg-white/30" indicatorClassName="bg-br-yellow" />
+              <Progress 
+                value={(stat.value / stat.target) * 100} 
+                className="h-2 bg-white/30"
+                // Replace indicatorClassName with className for the indicator using cn utility
+                style={{ '--progress-background': '#F5D04E' } as React.CSSProperties} 
+              />
               <p className="text-sm mt-2 opacity-80">Objectif: {stat.target} {stat.unit}</p>
             </div>
           ))}

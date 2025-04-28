@@ -1,11 +1,10 @@
-
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Camera, Gift, Cheese, Euro, Users } from 'lucide-react';
+import { Camera, Gift, Pizza, Euro, Users } from 'lucide-react';
 
 const Services: React.FC = () => {
   const services = [
@@ -41,7 +40,7 @@ const Services: React.FC = () => {
     },
     {
       id: "fromages",
-      icon: <Cheese className="w-12 h-12 text-br-blue" />,
+      icon: <Pizza className="w-12 h-12 text-br-blue" />,
       title: "Vente de Fromages Savoyards",
       description: "Découvrez les saveurs de nos montagnes avec notre sélection de fromages savoyards authentiques.",
       features: [
@@ -261,7 +260,7 @@ const Services: React.FC = () => {
                     <svg className="w-5 h-5 text-green-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Section dédiée sur notre site web</span>
+                    <span>Section dédiée sur notre site</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-green-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
