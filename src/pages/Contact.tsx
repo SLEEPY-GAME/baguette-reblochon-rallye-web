@@ -229,55 +229,6 @@ const Contact: React.FC = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Questions fréquentes</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Vous avez des questions ? Consultez notre FAQ ci-dessous ou n'hésitez pas à nous contacter.
-            </p>
-          </div>
-          
-          <div className="max-w-3xl mx-auto space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Comment puis-je devenir sponsor ?</h3>
-              <p className="text-gray-600">
-                Pour devenir sponsor, vous pouvez nous contacter par email ou téléphone. Nous proposons plusieurs formules adaptées à tous les budgets et pouvons créer une offre sur mesure pour votre entreprise.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Comment suivre votre aventure pendant le rallye ?</h3>
-              <p className="text-gray-600">
-                Nous publierons régulièrement des mises à jour sur nos réseaux sociaux (Instagram et Facebook). Vous pourrez suivre notre progression en temps réel et découvrir nos aventures au quotidien.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Quels types de dons acceptez-vous ?</h3>
-              <p className="text-gray-600">
-                Nous acceptons les dons financiers via notre page HelloAsso, mais aussi les dons matériels comme des fournitures scolaires, des équipements sportifs ou du matériel médical. Contactez-nous pour plus d'informations.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Puis-je réserver le photobooth pour un événement ?</h3>
-              <p className="text-gray-600">
-                Oui, notre photobooth est disponible à la location pour vos événements privés ou professionnels. Contactez-nous pour vérifier les disponibilités et obtenir un devis personnalisé.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Comment fonctionne la vente de fromages ?</h3>
-              <p className="text-gray-600">
-                Nous proposons des box de fromages savoyards authentiques plusieurs fois par an. Les commandes se font par email ou téléphone, et les livraisons sont organisées sur Annecy et ses environs, ou par transporteur pour le reste de la France.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
