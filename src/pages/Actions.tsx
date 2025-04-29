@@ -64,35 +64,152 @@ const Actions: React.FC = () => {
       </div>
 
       {/* Past Events */}
-      <section className="py-16 bg-white">
+      {/* 4L Trophy 2025 */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nos Événements Passés</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Retrouvez les temps forts de nos actions et aventures récentes.
+            <span className="text-br-blue font-medium">NOTRE PROCHAIN DÉFI</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">4L Trophy 2025</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Le plus grand rallye étudiant d'Europe à vocation humanitaire. 6000 km à travers la France, l'Espagne et le Maroc pour livrer des fournitures scolaires aux enfants défavorisés.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pastEvents.map((event, index) => (
-              <Card key={index} className="overflow-hidden card-hover">
-                <div className="h-56 overflow-hidden">
+
+          <Tabs defaultValue="about" className="max-w-4xl mx-auto">
+            <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-8">
+              <TabsTrigger value="about">Présentation</TabsTrigger>
+              <TabsTrigger value="preparation">Préparation</TabsTrigger>
+              <TabsTrigger value="itinerary">Itinéraire</TabsTrigger>
+              <TabsTrigger value="goals">Objectifs</TabsTrigger>
+            </TabsList>
+            
+            <TabsContent value="about" className="bg-white p-6 rounded-lg shadow-md">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Le 4L Trophy</h3>
+                  <p className="text-gray-700 mb-4">
+                    Le 4L Trophy est un raid humanitaire créé en 1997 destiné aux étudiants qui sillonnent le Maroc à bord de Renault 4L pour distribuer des fournitures scolaires aux enfants les plus démunis.
+                  </p>
+                  <p className="text-gray-700">
+                    Chaque année, plus de 1500 équipages participent à cette aventure unique, alliant défi sportif et action humanitaire.
+                  </p>
+                </div>
+                <div className="rounded-lg overflow-hidden h-64">
                   <img 
-                    src={event.image} 
-                    alt={event.title} 
-                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                    src="https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                    alt="4L Trophy" 
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <CardContent className="p-6">
-                  <div className="text-sm font-medium text-br-blue mb-2">
-                    {event.date}
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="preparation" className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold mb-4">Notre Préparation</h3>
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="font-medium">Inscription</span>
+                  <span className="text-green-600">Complété ✓</span>
+                </div>
+                <div className="w-full bg-gray-200 h-2 rounded-full">
+                  <div className="bg-green-500 h-2 rounded-full" style={{ width: '100%' }}></div>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <span className="font-medium">Révision mécanique</span>
+                  <span className="text-green-600">En cours (80%)</span>
+                </div>
+                <div className="w-full bg-gray-200 h-2 rounded-full">
+                  <div className="bg-green-500 h-2 rounded-full" style={{ width: '80%' }}></div>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <span className="font-medium">Collecte de fournitures</span>
+                  <span className="text-yellow-600">En cours (50%)</span>
+                </div>
+                <div className="w-full bg-gray-200 h-2 rounded-full">
+                  <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '50%' }}></div>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <span className="font-medium">Recherche de sponsors</span>
+                  <span className="text-yellow-600">En cours (60%)</span>
+                </div>
+                <div className="w-full bg-gray-200 h-2 rounded-full">
+                  <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '60%' }}></div>
+                </div>
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="itinerary" className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold mb-4">Notre Itinéraire</h3>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <div className="bg-br-blue text-white px-3 py-1 rounded-full text-sm">Étape 1</div>
+                  <div>
+                    <h4 className="font-bold">Biarritz → Algeciras</h4>
+                    <p className="text-gray-600">Traversée de la France et de l'Espagne (1500 km)</p>
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{event.title}</h3>
-                  <p className="text-gray-600">{event.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <div className="bg-br-blue text-white px-3 py-1 rounded-full text-sm">Étape 2</div>
+                  <div>
+                    <h4 className="font-bold">Algeciras → Tanger</h4>
+                    <p className="text-gray-600">Traversée du détroit de Gibraltar en ferry</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <div className="bg-br-blue text-white px-3 py-1 rounded-full text-sm">Étape 3</div>
+                  <div>
+                    <h4 className="font-bold">Tanger → Boulaajoul</h4>
+                    <p className="text-gray-600">Première étape marocaine (400 km)</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <div className="bg-br-blue text-white px-3 py-1 rounded-full text-sm">Étape 4</div>
+                  <div>
+                    <h4 className="font-bold">Boulaajoul → Merzouga</h4>
+                    <p className="text-gray-600">Traversée des montagnes de l'Atlas (350 km)</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-3">
+                  <div className="bg-br-blue text-white px-3 py-1 rounded-full text-sm">Étape 5</div>
+                  <div>
+                    <h4 className="font-bold">Merzouga → Marrakech</h4>
+                    <p className="text-gray-600">Traversée du désert et arrivée (450 km)</p>
+                  </div>
+                </div>
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="goals" className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold mb-4">Nos Objectifs</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="border border-gray-200 p-4 rounded-lg">
+                  <h4 className="font-bold text-lg mb-2">Objectifs Humanitaires</h4>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Livrer 100kg de fournitures scolaires</li>
+                    <li>Apporter 30kg d'équipements sportifs</li>
+                    <li>Fournir 20kg de matériel médical</li>
+                    <li>Parrainer une école locale pendant 1 an</li>
+                  </ul>
+                </div>
+                <div className="border border-gray-200 p-4 rounded-lg">
+                  <h4 className="font-bold text-lg mb-2">Objectifs Personnels</h4>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Terminer le rallye dans sa totalité</li>
+                    <li>Promouvoir l'engagement humanitaire</li>
+                    <li>Partager notre expérience avec le public</li>
+                    <li>Établir des contacts durables avec les communautés locales</li>
+                  </ul>
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
