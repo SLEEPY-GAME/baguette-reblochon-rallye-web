@@ -39,21 +39,6 @@ const Services: React.FC = () => {
       image: "https://images.unsplash.com/photo-1607344645866-009c320c5ab8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
-      id: "fromages",
-      icon: <Pizza className="w-12 h-12 text-br-blue" />,
-      title: "Vente de Fromages Savoyards",
-      description: "Découvrez les saveurs de nos montagnes avec notre sélection de fromages savoyards authentiques.",
-      features: [
-        "Reblochon fermier AOP",
-        "Beaufort d'alpage",
-        "Tomme de Savoie",
-        "Abondance",
-        "Livraison à domicile possible"
-      ],
-      price: "Box découverte à partir de 30€",
-      image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-    },
-    {
       id: "goodies",
       icon: <Gift className="w-12 h-12 text-br-blue" />,
       title: "Goodies",
