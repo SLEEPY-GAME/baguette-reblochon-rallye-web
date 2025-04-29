@@ -29,29 +29,6 @@ const Actions: React.FC = () => {
     }
   ];
 
-  const rallySteps = [
-    {
-      icon: <CalendarDays className="w-12 h-12 text-br-blue" />,
-      title: "Calendrier",
-      description: "Départ prévu en Février 2025 depuis Biarritz. Arrivée à Marrakech après 10 jours d'aventure à travers la France, l'Espagne et le Maroc."
-    },
-    {
-      icon: <FileText className="w-12 h-12 text-br-blue" />,
-      title: "Objectifs humanitaires",
-      description: "Livrer des fournitures scolaires, des équipements sportifs et du matériel médical aux écoles et associations locales au Maroc."
-    },
-    {
-      icon: <Users className="w-12 h-12 text-br-blue" />,
-      title: "Partenaires",
-      description: "En collaboration avec l'association 'Enfants du Désert' et le soutien de plusieurs sponsors locaux de Haute-Savoie."
-    },
-    {
-      icon: <Truck className="w-12 h-12 text-br-blue" />,
-      title: "Notre véhicule",
-      description: "Marianne, notre fidèle Renault 4L, entièrement révisée et préparée pour affronter les terrains les plus difficiles du désert marocain."
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       <NavBar />
@@ -268,18 +245,6 @@ const Actions: React.FC = () => {
               </div>
             </TabsContent>
           </Tabs>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-            {rallySteps.map((step, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  {step.icon}
-                </div>
-                <h3 className="text-xl font-bold text-center mb-3">{step.title}</h3>
-                <p className="text-gray-600 text-center">{step.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
