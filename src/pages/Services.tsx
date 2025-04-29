@@ -90,7 +90,7 @@ const Services: React.FC = () => {
                 <TabsTrigger key={service.id} value={service.id}>
                   <div className="flex flex-col items-center">
                     <div className="bg-blue-50 w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                      {React.cloneElement(service.icon, { className: "w-5 h-10 text-br-blue" })}
+                      {React.cloneElement(service.icon, { className: "w-5 h-5 text-br-blue" })}
                     </div>
                     <span className="text-sm">{service.title}</span>
                   </div>
