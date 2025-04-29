@@ -68,7 +68,7 @@ const Actions: React.FC = () => {
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-br-blue font-medium">NOTRE PROCHAIN DÉFI</span>
+            <span className="text-br-blue font-medium">NOTRE TOUT PREMIER DÉFI</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">4L Trophy 2025</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Le plus grand rallye étudiant d'Europe à vocation humanitaire. 6000 km à travers la France, l'Espagne et le Maroc pour livrer des fournitures scolaires aux enfants défavorisés.
