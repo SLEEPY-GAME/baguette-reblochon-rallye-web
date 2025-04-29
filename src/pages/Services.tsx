@@ -24,36 +24,6 @@ const Services: React.FC = () => {
       image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
-      id: "tombola",
-      icon: <Gift className="w-12 h-12 text-br-blue" />,
-      title: "Tombola Associative",
-      description: "Participez à notre tombola solidaire et tentez de remporter des lots exceptionnels tout en soutenant notre cause.",
-      features: [
-        "Organisée deux fois par an",
-        "Lots fournis par nos partenaires",
-        "Tirage en direct sur nos réseaux sociaux",
-        "Livraison des lots incluse",
-        "100% des bénéfices reversés à notre projet"
-      ],
-      price: "2€ le ticket, 5€ les 3 tickets",
-      image: "https://images.unsplash.com/photo-1607344645866-009c320c5ab8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      id: "goodies",
-      icon: <Gift className="w-12 h-12 text-br-blue" />,
-      title: "Goodies",
-      description: "Soutenez notre aventure en vous procurant nos goodies officiels Baguette et Reblochon.",
-      features: [
-        "T-shirts et sweats",
-        "Autocollants pour véhicule",
-        "Porte-clés 4L",
-        "Tote bags",
-        "Mugs"
-      ],
-      price: "À partir de 5€",
-      image: "https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-    },
-    {
       id: "sponsors",
       icon: <Euro className="w-12 h-12 text-br-blue" />,
       title: "Sponsoring",
