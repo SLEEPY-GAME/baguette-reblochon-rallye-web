@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Camera, Pizza, Gift, Euro, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -49,22 +48,9 @@ const ServicesSection: React.FC = () => {
           </p>
         </div>
 
-        <Tabs defaultValue={services[0].id} className="max-w-4xl mx-auto">
-          <TabsList className="grid grid-cols-3 mb-8 overflow-auto">
-            {services.map((service) => (
-              <TabsTrigger key={service.id} value={service.id}>
-                <div className="flex flex-col items-center">
-                  <div className="bg-blue-50 w-10 h-10 rounded-full flex items-center justify-center mb-2">
-                    {React.cloneElement(service.icon, { className: "w-5 h-5 text-br-blue" })}
-                  </div>
-                  <span className="text-sm">{service.title}</span>
-                </div>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-          
+        <div className="max-w-4xl mx-auto space-y-12">
           {services.map((service) => (
-            <TabsContent key={service.id} value={service.id} className="bg-white rounded-lg shadow-md">
+            <Card key={service.id} className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
                 <div className="rounded-lg overflow-hidden h-64 md:h-auto">
                   <img 
@@ -100,9 +86,9 @@ const ServicesSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </TabsContent>
+            </Card>
           ))}
-        </Tabs>
+        </div>
       </div>
     </section>
   );
