@@ -36,21 +36,6 @@ const ServicesSection: React.FC = () => {
       ],
       price: "Offres personnalisées",
       image: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      id: "fromages",
-      icon: <Pizza className="w-12 h-12 text-br-blue" />,
-      title: "Vente de Fromages",
-      description: "Soutenez notre aventure en dégustant d'authentiques fromages savoyards fabriqués dans nos montagnes.",
-      features: [
-        "Reblochon fermier AOP",
-        "Tomme de Savoie",
-        "Beaufort d'alpage",
-        "Livraison sur Annecy et ses environs",
-        "Commandes groupées possibles"
-      ],
-      price: "À partir de 8€ pièce",
-      image: "https://images.unsplash.com/photo-1452195100486-9d262f195331?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
