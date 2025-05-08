@@ -7,22 +7,22 @@ const TeamSection: React.FC = () => {
     {
       name: "Antoine",
       nickname: "Baguette",
-      role: "Le technicien stratège",
-      description: "L'aîné, pilote en chef, mécanicien et cerveau de l'équipe. Sa capacité à résoudre des problèmes techniques est à l'origine du surnom Baguette - toujours droit au but.",
+      role: "Le mécano à la tête froide",
+      description: "L'aîné, co-pilote en chef, mécanicien et cerveau de l'équipe. Baguette arrive toujours à temps pour empécher Reblochon de faire des bourdes.",
       image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       name: "Marianne",
       nickname: "La 4L",
       role: "Notre fidèle compagne",
-      description: "Plus qu'un véhicule, Marianne est le troisième membre de l'équipe. Cette 4L emblématique nous accompagne à travers montagnes, déserts et routes sinueuses depuis le début de notre aventure.",
+      description: "Plus qu'un véhicule, Marianne est le troisième membre de la fraterie. Cette 4L emblématique nous accompagne à travers montagnes, déserts et routes sinueuses depuis le début de notre aventure.",
       image: "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       name: "Julian",
       nickname: "Reblochon",
-      role: "La force tranquille",
-      description: "Le cadet, co-pilote, logisticien et force tranquille du duo. Comme le fromage dont il porte le surnom, il a un caractère fort et apporte toujours du réconfort dans les moments difficiles.",
+      role: "La joyeuse tornade",
+      description: "Le cadet, pilote en chef, community manager et fonceur de l'équipe. Reblochon ose ! Cela nous sors bien souvent des moments difficiles mais vaut mieux le garder à l'oeil !",
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
   ];

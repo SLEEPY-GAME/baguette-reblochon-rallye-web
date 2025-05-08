@@ -103,7 +103,7 @@ const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Adresse</p>
-                    <p className="text-gray-600">Annecy, Haute-Savoie, France</p>
+                    <p className="text-gray-600">Antibes, France</p>
                   </div>
                 </div>
                 
@@ -113,8 +113,8 @@ const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:contact@baguettereblochon.fr" className="text-br-blue hover:underline">
-                      contact@baguettereblochon.fr
+                    <a href="mailto:baguetteetreblochon@gmail.com" className="text-br-blue hover:underline">
+                      baguetteetreblochon@gmail.com
                     </a>
                   </div>
                 </div>
@@ -125,8 +125,8 @@ const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Téléphone</p>
-                    <a href="tel:+33612345678" className="text-br-blue hover:underline">
-                      +33 6 12 34 56 78
+                    <a href="tel:+33634687088" className="text-br-blue hover:underline">
+                      +33 6 34 68 70 88
                     </a>
                   </div>
                 </div>

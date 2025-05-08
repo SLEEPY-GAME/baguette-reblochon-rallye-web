@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 const StatsSection: React.FC = () => {
   const stats = [
     { label: "Kilomètres parcourus", value: 8500, target: 10000, unit: "km" },
-    { label: "Fournitures récoltées", value: 75, target: 100, unit: "kg" },
-    { label: "Enfants aidés", value: 120, target: 150, unit: "" },
-    { label: "Préparation 4L Trophy 2025", value: 65, target: 100, unit: "%" },
+    { label: "Fournitures récoltées", value: 250, target: 300, unit: "kg" },
+    { label: "Rallyes réalisés", value: 1, target: 3, unit: "" },
+    { label: "Préparation au 4L Alpes", value: 20, target: 100, unit: "%" },
   ];
 
   return (

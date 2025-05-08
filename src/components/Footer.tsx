@@ -42,9 +42,6 @@ const Footer: React.FC = () => {
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
               <li><Link to="/services#photobooth" className="text-gray-400 hover:text-white">Location de Photobooth</Link></li>
-              <li><Link to="/services#tombola" className="text-gray-400 hover:text-white">Tombola Associative</Link></li>
-              <li><Link to="/services#fromages" className="text-gray-400 hover:text-white">Vente de Fromages</Link></li>
-              <li><Link to="/services#goodies" className="text-gray-400 hover:text-white">Goodies</Link></li>
               <li><Link to="/services#sponsors" className="text-gray-400 hover:text-white">Sponsors</Link></li>
             </ul>
           </div>
@@ -54,15 +51,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-br-yellow mt-1" />
-                <span className="text-gray-400">Annecy, Haute-Savoie, France</span>
+                <span className="text-gray-400">Antibes, France</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-br-yellow" />
-                <a href="mailto:contact@baguettereblochon.fr" className="text-gray-400 hover:text-white">contact@baguettereblochon.fr</a>
+                <a href="mailto:baguetteetreblochon@gmail.com" className="text-gray-400 hover:text-white">baguetteetreblochon@gmail.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-br-yellow" />
-                <a href="tel:+33612345678" className="text-gray-400 hover:text-white">+33 6 12 34 56 78</a>
+                <a href="tel:+33634687088" className="text-gray-400 hover:text-white">+33 6 34 68 70 88</a>
               </li>
             </ul>
           </div>

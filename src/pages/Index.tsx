@@ -17,23 +17,23 @@ const Index: React.FC = () => {
       <div id="hero">
         <HeroSection />
       </div>
-      <div id="mission">
-        <MissionSection />
-      </div>
       <div id="team">
         <TeamSection />
       </div>
+      <div id="mission">
+        <MissionSection />
+      </div>
       <div id="stats">
         <StatsSection />
+      </div>
+      <div id="donate">
+        <CallToAction />
       </div>
       <div id="services">
         <ServicesSection />
       </div>
       <div id="contact">
         <ContactSection />
-      </div>
-      <div id="donate">
-        <CallToAction />
       </div>
       <Footer />
     </div>

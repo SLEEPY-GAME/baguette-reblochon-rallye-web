@@ -20,7 +20,7 @@ const Services: React.FC = () => {
         "Personnalisation des impressions",
         "Partage instantané sur les réseaux sociaux"
       ],
-      price: "À partir de 250€ la journée",
+      price: "À partir de 300€ la soirée",
       image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {

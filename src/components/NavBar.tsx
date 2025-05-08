@@ -57,8 +57,8 @@ const NavBar: React.FC = () => {
 
   const navLinks = [
     { name: "Accueil", sectionId: "hero" },
-    { name: "Notre Mission", sectionId: "mission" },
     { name: "Notre Équipe", sectionId: "team" },
+    { name: "Notre Mission", sectionId: "mission" },
     { name: "Notre Impact", sectionId: "stats" },
     { name: "Nos Services", sectionId: "services" },
     { name: "Contact", sectionId: "contact" },
@@ -133,8 +133,8 @@ const NavBar: React.FC = () => {
           ))}
           <Button 
             className="bg-br-yellow text-black hover:bg-br-yellow/80 ml-4"
-            onClick={() => scrollToSection("donate")}
-          >
+            onClick={() => window.location.href = "https://www.helloasso.com/associations/baguette-et-reblochon/formulaires/1"}
+            >
             Faire un don
           </Button>
         </div>

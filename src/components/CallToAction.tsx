@@ -10,11 +10,12 @@ const CallToAction: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Rejoignez l'Aventure</h2>
           <p className="text-xl text-gray-700 mb-8">
-            Soutenez notre participation au 4L Trophy 2025 et aidez-nous à faire une différence pour les enfants défavorisés.
+            Soutenez notre participation au 4L Trophy 2025 et au 4L Alpes 2026 et aidez-nous à faire une différence pour les enfants défavorisés !
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button className="bg-br-blue hover:bg-br-blue/90 text-white px-8 py-6 text-lg">
+            <Button className="bg-br-blue hover:bg-br-blue/90 text-white px-8 py-6 text-lg"
+              onClick={() => window.location.href = "https://www.helloasso.com/associations/baguette-et-reblochon/formulaires/1"}>
               Faire un don
             </Button>
             <Button variant="outline" className="border-br-blue text-br-blue hover:bg-br-blue/10 px-8 py-6 text-lg">
@@ -25,7 +26,7 @@ const CallToAction: React.FC = () => {
           
           <div className="flex justify-center gap-4">
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/baguette_et_reblochon/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-3 rounded-full shadow-md hover:shadow-lg transition-shadow"
@@ -33,7 +34,7 @@ const CallToAction: React.FC = () => {
               <Instagram className="w-6 h-6 text-pink-600" />
             </a>
             <a 
-              href="https://facebook.com" 
+              href="https://www.facebook.com/profile.php?id=61556435617265" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white p-3 rounded-full shadow-md hover:shadow-lg transition-shadow"
@@ -41,7 +42,7 @@ const CallToAction: React.FC = () => {
               <Facebook className="w-6 h-6 text-blue-600" />
             </a>
             <a 
-              href="https://helloasso.com" 
+              href="https://www.helloasso.com/associations/baguette-et-reblochon" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white px-5 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow flex items-center"

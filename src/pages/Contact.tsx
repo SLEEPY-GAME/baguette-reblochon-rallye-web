@@ -49,19 +49,19 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6 text-br-blue" />,
       title: "Email",
-      details: "contact@baguettereblochon.fr",
-      action: "mailto:contact@baguettereblochon.fr"
+      details: "baguetteetreblochon@gmail.com",
+      action: "mailto:baguetteetreblochon@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6 text-br-blue" />,
       title: "Téléphone",
-      details: "+33 6 12 34 56 78",
-      action: "tel:+33612345678"
+      details: "+33 6 34 68 70 88",
+      action: "tel:+33634687088"
     },
     {
       icon: <MapPin className="w-6 h-6 text-br-blue" />,
       title: "Adresse",
-      details: "Annecy, Haute-Savoie, France",
+      details: "Antibes, France",
       action: "https://goo.gl/maps/12345"
     },
     {
