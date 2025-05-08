@@ -1,7 +1,23 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+
 const HeroSection: React.FC = () => {
+  const scrollToDonate = () => {
+    const donateSection = document.getElementById('donate');
+    if (donateSection) {
+      donateSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToMission = () => {
+    const missionSection = document.getElementById('mission');
+    if (missionSection) {
+      missionSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return <div className="hero-section min-h-screen flex items-center relative">
       <div className="container mx-auto px-4 py-20 text-center md:text-left">
         <div className="md:max-w-2xl animate-fade-in">
@@ -12,10 +28,17 @@ const HeroSection: React.FC = () => {
             Deux frères savoyards, une 4L emblématique et un rêve humanitaire
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button className="bg-br-yellow text-black hover:bg-br-yellow/80 text-lg px-8 py-6">
+            <Button 
+              onClick={scrollToDonate} 
+              className="bg-br-yellow text-black hover:bg-br-yellow/80 text-lg px-8 py-6"
+            >
               Soutenir l'aventure
             </Button>
-            <Button variant="outline" className="border-white text-lg px-8 py-6 bg-slate-950 hover:bg-slate-800 text-gray-50">
+            <Button 
+              onClick={scrollToMission}
+              variant="outline" 
+              className="border-white text-lg px-8 py-6 bg-slate-950 hover:bg-slate-800 text-gray-50"
+            >
               Découvrir nos actions
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
@@ -29,4 +52,5 @@ const HeroSection: React.FC = () => {
       </div>
     </div>;
 };
+
 export default HeroSection;

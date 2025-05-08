@@ -38,6 +38,13 @@ const ServicesSection: React.FC = () => {
     }
   ];
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -82,7 +89,7 @@ const ServicesSection: React.FC = () => {
                   
                   <div className="flex items-center justify-between mb-6">
                     <span className="font-bold text-lg">{service.price}</span>
-                    <Button className="bg-br-blue hover:bg-br-blue/90">En savoir plus</Button>
+                    <Button onClick={scrollToContact} className="bg-br-blue hover:bg-br-blue/90">En savoir plus</Button>
                   </div>
                 </div>
               </div>
