@@ -1,9 +1,15 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -19,10 +25,10 @@ const Footer: React.FC = () => {
               Une aventure humanitaire savoyarde, sur les routes des rallyes pour aider les enfants défavorisés.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <a href="https://instagram.com/baguette_et_reblochon" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <a href="https://facebook.com/profile.php?id=61556435617265" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -31,18 +37,18 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Navigation</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-400 hover:text-white">Accueil</Link></li>
-              <li><Link to="/actions" className="text-gray-400 hover:text-white">Nos Actions</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white">Nos Services</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
+              <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-white">Accueil</button></li>
+              <li><button onClick={() => scrollToSection('mission')} className="text-gray-400 hover:text-white">Nos Actions</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white">Nos Services</button></li>
+              <li><button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-white">Contact</button></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/services#photobooth" className="text-gray-400 hover:text-white">Location de Photobooth</Link></li>
-              <li><Link to="/services#sponsors" className="text-gray-400 hover:text-white">Sponsors</Link></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white">Location de Photobooth</button></li>
+              <li><button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-white">Sponsors</button></li>
             </ul>
           </div>
           

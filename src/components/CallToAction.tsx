@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Instagram, Facebook, ArrowRight } from "lucide-react";
 
 const CallToAction: React.FC = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 bg-gradient-to-r from-br-yellow/20 to-br-blue/20">
       <div className="container mx-auto px-4">
@@ -18,7 +25,11 @@ const CallToAction: React.FC = () => {
               onClick={() => window.location.href = "https://www.helloasso.com/associations/baguette-et-reblochon/formulaires/1"}>
               Faire un don
             </Button>
-            <Button variant="outline" className="border-br-blue text-br-blue hover:bg-br-blue/10 px-8 py-6 text-lg">
+            <Button 
+              variant="outline" 
+              className="border-br-blue text-br-blue hover:bg-br-blue/10 px-8 py-6 text-lg"
+              onClick={scrollToContact}
+            >
               Devenir sponsor
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
