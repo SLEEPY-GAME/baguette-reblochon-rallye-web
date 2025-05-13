@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -23,7 +22,7 @@ const TeamSection: React.FC = () => {
       nickname: "Reblochon",
       role: "La joyeuse tornade",
       description: "Le cadet, pilote en chef, community manager et fonceur de l'équipe. Reblochon ose ! Cela nous sors bien souvent des moments difficiles mais vaut mieux le garder à l'oeil !",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/lovable-uploads/88327f10-24ed-4b88-be47-06c43f5b0d27.png"
     }
   ];
 
