@@ -16,7 +16,7 @@ const TeamSection: React.FC = () => {
       nickname: "La 4L",
       role: "Notre fidèle compagne",
       description: "Plus qu'un véhicule, Marianne est le troisième membre de la fraterie. Cette 4L emblématique nous accompagne à travers montagnes, déserts et routes sinueuses depuis le début de notre aventure.",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/lovable-uploads/1eaef86a-19f2-4346-ace4-8070e77de0d7.png"
     },
     {
       name: "Julian",
