@@ -8,6 +8,7 @@ const StatsSection: React.FC = () => {
     { label: "Kilomètres parcourus", value: 8500, target: 10000, unit: "km" },
     { label: "Fournitures récoltées", value: 250, target: 300, unit: "kg" },
     { label: "Rallyes réalisés", value: 1, target: 3, unit: "" },
+    { label: "Réparations réalisées", value: 8, target: 10, unit: "galères" },
   ];
 
   return (
