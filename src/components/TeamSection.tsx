@@ -22,7 +22,7 @@ const TeamSection: React.FC = () => {
       nickname: "Reblochon",
       role: "La joyeuse tornade",
       description: "Le cadet, pilote en chef, community manager et fonceur de l'équipe. Reblochon ose ! Cela nous sors bien souvent des moments difficiles mais vaut mieux le garder à l'oeil !",
-      image: "/lovable-uploads/88327f10-24ed-4b88-be47-06c43f5b0d27.png"
+      image: "/lovable-uploads/4d492a0c-ea49-48bc-adc0-211c42e3272a.png"
     }
   ];
 
