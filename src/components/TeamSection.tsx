@@ -8,7 +8,7 @@ const TeamSection: React.FC = () => {
       nickname: "Baguette",
       role: "Le mécano à la tête froide",
       description: "L'aîné, co-pilote en chef, mécanicien et cerveau de l'équipe. Baguette arrive toujours à temps pour empécher Reblochon de faire des bourdes.",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "/lovable-uploads/88327f10-24ed-4b88-be47-06c43f5b0d27.png"
     },
     {
       name: "Marianne",
@@ -23,6 +23,8 @@ const TeamSection: React.FC = () => {
       role: "La joyeuse tornade",
       description: "Le cadet, pilote en chef, community manager et fonceur de l'équipe. Reblochon ose ! Cela nous sors bien souvent des moments difficiles mais vaut mieux le garder à l'oeil !",
       image: "/lovable-uploads/4d492a0c-ea49-48bc-adc0-211c42e3272a.png"
+            image: "/lovable-uploads/4d492a0c-ea49-48bc-adc0-211c42e3272a.png"
+
     }
   ];
 
