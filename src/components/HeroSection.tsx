@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
     }
   };
 
-  return <div className="hero-section min-h-screen flex items-center relative">
+  return <div className="hero-section-4l min-h-screen flex items-center relative">
       <div className="container mx-auto px-4 py-20 text-center md:text-left">
         <div className="md:max-w-2xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">

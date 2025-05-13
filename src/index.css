@@ -106,6 +106,12 @@
   background-position: center;
 }
 
+.hero-section-4l {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/lovable-uploads/38b920e5-e778-4fd8-828d-8b39d2a14073.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .section-transition {
   position: relative;
 }
