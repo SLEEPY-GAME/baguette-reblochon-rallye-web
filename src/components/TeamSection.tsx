@@ -8,7 +8,7 @@ const TeamSection: React.FC = () => {
       nickname: "Baguette",
       role: "Le mécano à la tête froide",
       description: "L'aîné, co-pilote en chef, mécanicien et cerveau de l'équipe. Baguette arrive toujours à temps pour empécher Reblochon de faire des bourdes.",
-      image: "/lovable-uploads/4d492a0c-ea49-48bc-adc0-211c42e3272a.png"
+      image: "/lovable-uploads/88327f10-24ed-4b88-be47-06c43f5b0d27.png"
     },
     {
       name: "Marianne",
