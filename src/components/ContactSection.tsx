@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Loader2 } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
+import emailjs from 'emailjs-com';
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -13,19 +14,47 @@ const ContactSection: React.FC = () => {
     email: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
   
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message envoyé !",
-      description: "Nous vous répondrons dans les plus brefs délais.",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    setIsLoading(true);
+    
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: 'julian.dezarnaud@gmail.com'
+      };
+      
+      await emailjs.send(
+        'default_service', // You'll need to replace with your actual service ID
+        'template_contact', // You'll need to replace with your actual template ID
+        templateParams,
+        'YOUR_USER_ID' // You'll need to replace with your actual user ID
+      );
+      
+      toast({
+        title: "Message envoyé !",
+        description: "Nous vous répondrons dans les plus brefs délais.",
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
   
   return (
@@ -54,6 +83,7 @@ const ContactSection: React.FC = () => {
                     placeholder="Votre nom"
                     required
                     className="w-full"
+                    disabled={isLoading}
                   />
                 </div>
                 <div>
@@ -69,6 +99,7 @@ const ContactSection: React.FC = () => {
                     placeholder="votre@email.com"
                     required
                     className="w-full"
+                    disabled={isLoading}
                   />
                 </div>
                 <div>
@@ -83,10 +114,22 @@ const ContactSection: React.FC = () => {
                     placeholder="Votre message"
                     required
                     className="w-full min-h-[150px]"
+                    disabled={isLoading}
                   />
                 </div>
-                <Button type="submit" className="w-full bg-br-blue hover:bg-br-blue/90">
-                  Envoyer
+                <Button 
+                  type="submit" 
+                  className="w-full bg-br-blue hover:bg-br-blue/90"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Envoi en cours...
+                    </>
+                  ) : (
+                    "Envoyer"
+                  )}
                 </Button>
               </div>
             </form>
