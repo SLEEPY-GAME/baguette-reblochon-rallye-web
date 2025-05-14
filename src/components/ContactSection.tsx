@@ -27,17 +27,17 @@ const ContactSection: React.FC = () => {
     
     try {
       const templateParams = {
-        from_name: formData.name,
+        name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_email: 'julian.dezarnaud@gmail.com'
+        to_email: 'baguetteetreblochon@gmail.com'
       };
       
       await emailjs.send(
-        'default_service', // You'll need to replace with your actual service ID
-        'template_contact', // You'll need to replace with your actual template ID
+        'service_1lqq3qj', // You'll need to replace with your actual service ID
+        'template_dt3u8ed', // You'll need to replace with your actual template ID
         templateParams,
-        'YOUR_USER_ID' // You'll need to replace with your actual user ID
+        'J9v33p6g2vHVk4eVr' // You'll need to replace with your actual user ID
       );
       
       toast({
