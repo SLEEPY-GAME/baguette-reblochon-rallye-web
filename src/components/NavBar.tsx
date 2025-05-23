@@ -78,8 +78,12 @@ const NavBar: React.FC = () => {
           onClick={() => scrollToSection("hero")} 
           className="flex items-center gap-2 cursor-pointer"
         >
-          <div className="w-12 h-12 bg-br-blue rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-lg">B&R</span>
+          <div className="w-12 h-12 flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/599e97cd-b05a-4b98-a1f4-16096ea43b6e.png" 
+              alt="Baguette et Reblochon" 
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className={cn(
             "font-lora font-bold text-xl transition-colors",
